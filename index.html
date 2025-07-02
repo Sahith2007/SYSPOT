@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYSPOT – Live System Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>🖥️ SYSPOT – Live System Dashboard</h1>
+    <section class="cards">
+        <div class="card">
+            <h3>CPU Usage</h3>
+            <p id="cpuText">-- %</p>
+            <canvas id="cpuChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>RAM Usage</h3>
+            <p id="ramText">-- MB / -- MB</p>
+            <canvas id="ramChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Disk Usage</h3>
+            <p id="diskText">-- %</p>
+        </div>
+
+        <div class="card">
+            <h3>Network</h3>
+            <p id="netText">↑ -- KB  ↓ -- KB</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
